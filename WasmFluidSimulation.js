@@ -6582,10 +6582,6 @@ var ASM_CONSTS = {
       GLFW.getCursorPos(winid, x, y);
     }
 
-  function _glfwGetKey(winid, key) {
-      return GLFW.getKey(winid, key);
-    }
-
   function _glfwGetMouseButton(winid, button) {
       return GLFW.getMouseButton(winid, button);
     }
@@ -7172,7 +7168,6 @@ var asmLibraryArg = {
   "glfwCreateWindow": _glfwCreateWindow,
   "glfwDestroyWindow": _glfwDestroyWindow,
   "glfwGetCursorPos": _glfwGetCursorPos,
-  "glfwGetKey": _glfwGetKey,
   "glfwGetMouseButton": _glfwGetMouseButton,
   "glfwInit": _glfwInit,
   "glfwMakeContextCurrent": _glfwMakeContextCurrent,
